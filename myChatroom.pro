@@ -14,13 +14,19 @@ TEMPLATE = app
 
 SOURCES += main.cpp \
     drawer.cpp \
-    chatroom.cpp
+    chatroom.cpp \
+    server.cpp \
+    client.cpp
 
 HEADERS  +=  drawer.h \
-    chatroom.h
+    chatroom.h \
+    server.h \
+    client.h
 
 FORMS    +=  drawer.ui \
-    chatroom.ui
+    chatroom.ui \
+    server.ui \
+    client.ui
 
 RESOURCES += \
     images.qrc
