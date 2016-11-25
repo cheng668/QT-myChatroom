@@ -25,8 +25,11 @@ protected:
     void usrEnter(QString usrname,QString ipaddr);       //新用户加入群聊
     void usrLeft(QString usrname,QString time);          //用户离开聊天室
     void sndMsg(MsgType type,QString srvaddr = "");      //广播UDP消息
+    /*获取本机IP,用于udp信息发送*/
     QString getIP();
+    /*获取drawer穿进来的头像名字，用于udp发送*/
     QString getUsr();
+    /*获取输入框中文本，转化为html格式，用于udp msg发送*/
     QString getMsg();
     /*判断是否接收filename类型udp消息*/
     void hasPendingFile(QString usrname,QString srvaddr,QString clntaddr,QString filename);
